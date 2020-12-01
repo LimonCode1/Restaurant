@@ -1,0 +1,133 @@
+$texture: url('../img/texture.png')
+$black: #000000
+$dark: #4E342E
+.main
+    background: $texture
+    background-repeat: repeat
+    .about .container
+        overflow: visible
+        position: relative
+        height: 450px
+        .photo
+            width: 80%
+            position: absolute
+            left: 0
+            top: -140px
+            z-index: 0
+            box-shadow: 0px 0px 20px rgba($black, 1 )
+            img
+                vertical-align: top
+                width: 100%
+        article
+            background: $white
+            padding: 40px
+            width: 50%
+            position: relative
+            top: 300px
+            z-index: 1
+            box-shadow: 0px 0px 60px rgba($black, 1 )
+            float: right
+            h3
+                font-size: 50px
+                font-weight: 300
+                margin-bottom: 40px
+            p 
+                line-height: 28px
+                margin-bottom: 15px
+    .menu
+        padding-top: 50px
+        margin-bottom: 80px
+        .title
+            font-size: 40px
+            font-weight: 300
+            text-align: center
+            margin-bottom: 40px
+        .container-menu, .container-menu2
+            border: 2px solid $black
+            background: transparent
+            padding: 10px
+            overflow: hidden
+            article
+                width: 50%
+                float: left
+                padding: 20px
+                .category
+                    font-size: 22px
+                    font-weight: 700
+                    margin-bottom: 40px
+                    text-align: center
+                .platillo
+                    margin-bottom: 30px
+                    padding-bottom: 20px
+                    border-bottom: 4px dotted $black
+                    overflow: hidden /** esto por si hay mas contenido que se esconda y no estropee el diseño **/
+                    .name
+                        font-size: 20px
+                        margin-bottom: 15px
+                        float: right
+                    .price
+                        font-size: 20px
+                        margin-bottom: 15px
+                        float: left
+                    .description
+                        font-size: 16px
+                        color: $dark
+                        clear: both
+    .gallery
+        overflow: hidden
+        .photo
+            width: 25%
+            float: left
+            img 
+                width: 100%
+                vertical-align: top
+                opacity: .7
+                &:hover
+                    opacity: 1
+                    -o-transition: all .3s ease
+                    -moz-transition: all .3s ease
+                    -webkit-transition: all .3s ease
+                    transition: all .3s ease
+    .location
+        background: $white
+        padding: 10px 20px
+        overflow: hidden
+        margin-top: 20px
+        .container
+            height: 250px
+            .title
+                text-align: center
+                font-size: 40px
+                line-height: 40px
+                font-weight: 300
+                margin-bottom: 40px
+            .location
+                float: left
+                width: 50%
+                text-align: left
+                background: $white
+                .street
+                    margin-bottom: 15px
+            .schedules
+                float: right
+                width: 50%
+                text-align: right
+                overflow: hidden
+                h4 
+                    text-align: center
+                    margin-bottom: 20px
+                .weekDays, .weekEnd
+                    width: 50%
+                    float: left
+                    text-align: center
+    .map
+        width: 100%
+        overflow: hidden
+        iframe
+            width: 100%
+            max-height: 600px 
+
+
+
+        
+
